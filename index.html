@@ -1,1 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EagleCraft - Download</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
 
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .container {
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+            max-width: 600px;
+            width: 100%;
+            padding: 40px;
+            text-align: center;
+        }
+
+        h1 {
+            color: #333;
+            margin-bottom: 10px;
+            font-size: 2.5em;
+        }
+
+        .subtitle {
+            color: #666;
+            margin-bottom: 30px;
+            font-size: 1.1em;
+        }
+
+        .features {
+            text-align: left;
+            margin: 30px 0;
+            padding: 20px;
+            background: #f5f5f5;
+            border-radius: 8px;
+        }
+
+        .features ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .features li {
+            padding: 10px 0;
+            color: #555;
+            font-size: 1em;
+        }
+
+        .features li:before {
+            content: "✓ ";
+            color: #667eea;
+            font-weight: bold;
+            margin-right: 10px;
+        }
+
+        .download-btn {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 15px 40px;
+            font-size: 1.1em;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 20px;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+
+        .download-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 20px rgba(102, 126, 234, 0.4);
+        }
+
+        .download-btn:active {
+            transform: translateY(0);
+        }
+
+        .info {
+            margin-top: 30px;
+            padding-top: 20px;
+            border-top: 1px solid #eee;
+            color: #999;
+            font-size: 0.9em;
+        }
+
+        .status {
+            margin-top: 20px;
+            padding: 15px;
+            background: #e8f5e9;
+            border-radius: 5px;
+            color: #2e7d32;
+            display: none;
+        }
+
+        .status.show {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🦅 EagleCraft</h1>
+        <p class="subtitle">Experience the ultimate Minecraft alternative</p>
+
+        <div class="features">
+            <ul>
+                <li>High-performance gameplay</li>
+                <li>Cross-platform compatibility</li>
+                <li>Rich world building experience</li>
+                <li>Community-driven development</li>
+                <li>Regular updates and improvements</li>
+            </ul>
+        </div>
+
+        <button class="download-btn" onclick="initiateDownload()">Download Now</button>
+
+        <div class="status" id="status"></div>
+
+        <div class="info">
+            <p>© 2026 EagleCraft. All rights reserved.</p>
+            <p>Join our community and start your adventure today!</p>
+        </div>
+    </div>
+
+    <script>
+        // Initialize page
+        document.addEventListener('DOMContentLoaded', function() {
+            console.log('EagleCraft Landing Page Loaded');
+            displayWelcomeMessage();
+        });
+
+        function displayWelcomeMessage() {
+            console.log('Welcome to EagleCraft Download Page');
+        }
+
+        function initiateDownload() {
+            const statusEl = document.getElementById('status');
+            statusEl.classList.add('show');
+            statusEl.textContent = '⏳ Preparing download...';
+
+            // Simulate download preparation
+            setTimeout(function() {
+                statusEl.textContent = '✓ Download ready! Redirecting to download page...';
+                console.log('Download initiated');
+                
+                // Replace with actual download URL
+                // window.location.href = 'https://your-download-url.com';
+            }, 1500);
+        }<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Page Title</title>
+</head>
+<body>
+    <h1>Welcome to Your Page</h1>
+    <p>This is a placeholder for your content.</p>
+</body>
+</html>
+
+        // Track button interactions
+        document.querySelector('.download-btn').addEventListener('mouseover', function() {
+            console.log('Download button hovered');
+        });
+    </script>
+</body>
+</html>
+<meta name="description" content="A brief description of the page">
+<meta name="author" content="Your Name">
